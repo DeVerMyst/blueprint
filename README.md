@@ -7,10 +7,10 @@ Un blueprint est un moyen de diviser une application Flask en segments plus peti
 * **Réutilisabilité** : Facilite la réutilisation de segments de code entre différentes applications.
 * **Organisation** : Améliore la structure et la lisibilité du code.
 * **Collaboration** : Facilite le travail collaboratif en permettant à différentes équipes de travailler sur différents segments de l'application.
-Création et Utilisation d'un Blueprint
-Voici un exemple détaillé pour illustrer comment créer et utiliser un blueprint dans une application Flask.
 
-```blueprint/
+
+```
+blueprint/
 │
 ├── project/
 │   ├── __init__.py
@@ -23,18 +23,28 @@ Voici un exemple détaillé pour illustrer comment créer et utiliser un bluepri
 │   │   ├── __init__.py
 │   │   └── routes.py
 │   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── user.py
+│   │
 │   ├── static/
 │   │   ├── css/
 │   │   ├── js/
 │   │   └── img/
 │   │
 │   └── templates/
-│       ├── index
-│       ├── signup
-│       ├── login
-│       ├── profile
-│       └── base.html  # Le template de base commun
+│       ├── auth/
+│       │   ├── signup.html
+│       │   └── login.html
+│       ├── main/
+│       │   ├── index.html
+│       │   └── profile.html
+│       └── base.html
 │
+├── .venv
+├── db.sqlite
+├── .gitignore
+├── README.md
 ├── create_db.py
 ├── run.py
 └── requirements.txt
