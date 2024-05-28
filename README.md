@@ -1,4 +1,4 @@
-#Qu'est-ce qu'un Blueprint ?
+# Qu'est-ce qu'un Blueprint ?
 
 Un blueprint est un moyen de diviser une application Flask en segments plus petits et plus gérables. Chaque blueprint peut avoir ses propres routes, vues, modèles, formulaires, fichiers statiques, et templates. Cette approche est particulièrement utile pour les grandes applications où la séparation des préoccupations améliore la maintenabilité et la lisibilité du code.
 
